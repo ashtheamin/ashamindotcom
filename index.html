@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ash Amin</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img src="logo.svg" alt="" class="brand-logo" />
+        <span class="brand-name">Ash Amin</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" id="navToggle">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+
+          <li><a href="#contact" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1 class="hero-title">Ash Amin</h1>
+          <p class="hero-sub">I'm a curious and passionate person, with plenty of interests regarding learning about what there is to know about the world, and I also happen to be a software developer, ready to serve the technological needs of your organisation.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#contact">Let's work together</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="portrait">
+            <!-- Replace with your portrait -->
+            <img src="portrait.jpg" alt="Portrait Ash" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="section-sub">Available for freelance, contract, or full-time.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form card" id="contactForm" action="https://formsubmit.co/d7628cd0fb4c8e76f4b81abf6db107f1" method="POST">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send message</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <aside class="contact-aside">
+          <div class="card">
+            <h4>Contact details</h4>
+            <p>Location: Sydney, New South Wales, Australia</p>
+            <p>Availability: Open to new projects</p>
+          </div>
+
+          <div class="card social">
+            <h4>Follow</h4>
+            <div class="social-links">
+              <a href="https://github.com/ashtheamin" aria-label="GitHub">GitHub</a>
+              <a href="https://www.linkedin.com/in/ashtheamin" aria-label="LinkedIn">LinkedIn</a>
+              <a href="https://www.facebook.com/ashtheamin" aria-label="Facebook">Facebook</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ash Amin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
